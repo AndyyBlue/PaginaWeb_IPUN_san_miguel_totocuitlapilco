@@ -339,6 +339,7 @@
            max-width:100%;
          }
          .mobile-info{display: block;text-align: center;font-size: 1rem;color: #ffffff;margin-bottom: 15px;}
+        .fb{width:410px;height:250px;}
         }
       @media only screen and (min-width:601px){
         .foot{padding:1rem 0.75rem;margin-top:1rem;}
