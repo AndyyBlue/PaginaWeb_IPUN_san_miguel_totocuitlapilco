@@ -343,7 +343,6 @@
          .mobile-info{display: block;text-align: center;font-size: 1rem;color: #ffffff;margin-bottom: 15px;}
         
         }
-
         @media (max-width: 480px) {
          .video-container{max-width:100%;}
         }
@@ -358,13 +357,13 @@
         .n a{font-size:2rem}
         .nav-links{text-align:center}
       }
+
       @media (hover: hover) {
       .card:hover .card-inner {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
       }
     }
-
     .card.flip .card-inner {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
