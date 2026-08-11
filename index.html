@@ -1,14 +1,8 @@
-<!DOCTYPE html> <!-- hecho el 28/05/26 con ♥ por 𝔄𝔫𝔡𝔶 </> para la Gloria de Dios-->
+<!DOCTYPE html> 
 <html lang="es">
+   <!-- Hecho el 28/05/26 con ♥ por 𝔄𝔫𝔡𝔶 </> para la Gloria de Dios-->
 <head>
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1LQ51HHBF"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'G-R1LQ51HHBF');
-   </script>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,17 +10,6 @@
    <title>IPUN San Miguel Totocuitlapilco</title> 
    <meta name="description" content="Sitio oficial de la Iglesia Pentecostal Unida Nacional en San Miguel Totocuitlapilco, EdoMex. Conoce nuestros valores, horarios de servicios y próximos eventos nacionales.">
    <link rel="stylesheet" href="style.css">
-   <style>
-      @media (max-width:992px){
-         .menu-icon{display:block}  
-         #menu-toggle{display:none}
-         .nav-links{display:none;width:100%;flex-direction:column;margin-top:0.5rem}  
-         #menu-toggle:checked + .menu-icon + .nav-links{display:flex}
-         .navbar{align-items:flex-start}
-         .site-title{font-size:1rem}
-      }
-      
-   </style>
 </head>
 <body>
    <div class="bubble-background" aria-hidden="true">
@@ -54,7 +37,7 @@
             <li><a href="#" alt="Botón de inicio" title="Inicio">Inicio</a></li>
             <li><a href="#Nosotros" alt="Sobre nosotros" title="Nosotros">Nosotros</a></li>
             <li><a href="#Servicios" alt="Nuestros servicios" title="Cultos y horarios">Servicios</a></li>
-            <li><a href="#Contacto" alt="Contáctanos" title="Contáctanos en redes sociales">Contacto</a></li>
+            <li><a href="#Eventos" alt="Eventos" title="Descubre nuestros próximos eventos nacionales y distritales">Eventos</a></li>
             <li><a href="#Ubicacion" alt="Dónde nos ubicamos" title="Ubicanos">Ubicación</a></li>
          </ul>
       </nav>
@@ -194,55 +177,25 @@
          </tr>
         </table></center>
         <br>
-        <h1 style="font-size:50px" class="revela">Próximos eventos</h1>
+        <h1 style="font-size:50px" id="Eventos" class="revela">Próximos eventos</h1>
         <center><img src="damas.jpeg" alt="Convención distrital de Damas Dorcas, distrito #3. 5 de Septiembre del 2026 en la Msión de Amapolas" title="Convención de Damas Dorcas | Distrito 3" class="revela imagen">
-        <p class="over-text">Convención de Damas Dorcas, distrito #3<br> 5 de Septiembre del 2026 en la Misión de Amapolas</p></center>
+        <p class="over-text revela">Convención de Damas Dorcas, distrito #3<br> 5 de Septiembre del 2026 en la Misión de Amapolas</p></center>
       </section>
    </main>
 <footer class="foot">
    <div class="n">
       <a href="#" title="Ir arriba" aria-label="Subir al inicio">↑</a>
    </div>
-      <p style="text-align:center;font-size:2rem;" id="Contacto" class="revela">¡Síguenos en nuestras redes sociales!</p>
+      <p style="text-align:center;font-size:2rem;" class="revela">¡Síguenos en nuestras redes sociales!</p>
       <a href="https://www.facebook.com/share/1GmSgoLKHW/"><i class="fab fa-facebook revela"></i></a>
       <a href="https://www.instagram.com/ipun_sanmigueltotocuitlapilco?igsh=cHJweTRnaGtlNHB6"><i class="fab fa-instagram revela"></i></a><br><br>
+      <p style="text-align:center;font-size:2rem;" class="revela">¡Escucha en vivo a la emisora oficial de la IPUH!</p>
+      <a href="https://jesusradio.fm/" target="_blank"><img src="jesus_radio.png" alt="Jesús Radio la radio del nombre de Jesús." title="Jesús Radio" class="revela" style="background:white;border-radius:5px;padding:10px;"></a>
+      <br><br>
    <div style="flex-direction:row-reverse;gap:150px;display:flex;justify-content:space-beteween;" id="Ubicacion" class="mapa revela"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.7937012618444!2d-99.59279083044957!3d19.231211998875356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b82e3c38999%3A0x78939cfe17fbeb6c!2sSantos%20Degollado%203%2C%20San%20Miguel%20Totocuitlapilco%2C%2052143%20San%20Miguel%20Totocuitlapilco%2C%20M%C3%A9x.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1780433664193!5m2!1ses!2sus" style="border:0;width:400px;height:300px;border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div><br>
    <p class="foot2" style="font-size:1rem;">Copyright &copy; <span id="año"></span> Iglesia Pentecostal Unida Nacional San Miguel Totocuitlapilco</p>
 </footer>
-<script>
-   document.getElementById("año").textContent=new Date().getFullYear();
-
-   const texto = "¡Bienvenido a nuestro sitio!";
-    let i = 0;
-
-    function escribir() {
-      if (i < texto.length) {
-        document.getElementById("typing").textContent += texto.charAt(i);
-        i++;
-        setTimeout(escribir, 40); 
-      }
-    }
-    window.onload = escribir;
-
-   const elementos = document.querySelectorAll(".revela");
-   const observer = new IntersectionObserver((entradas) => {
-         entradas.forEach((entrada) => {
-            if (entrada.isIntersecting) {
-            entrada.target.classList.add("visible");
-            }
-         });
-      }, { threshold: 0.2 }); 
-      elementos.forEach((el) => observer.observe(el));
-
-      document.querySelectorAll(".card").forEach(card => {
-      card.addEventListener("click", () => {
-         card.classList.toggle("flip");
-      });
-   });
-   if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-      document.querySelector(".fondo").style.backgroundAttachment = "scroll";
-   }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
