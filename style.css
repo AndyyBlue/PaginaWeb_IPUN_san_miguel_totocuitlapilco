@@ -298,6 +298,7 @@
       @media (max-width:600px){
         .imagen{width:100%;}
         .over-text{width:100%;font-size:1.8rem;}
+        .over-text2{width:100%;font-size:2rem;width:50%;}
         .foot{
           padding:1.5rem 1rem;
           margin-top:1.5rem;
