@@ -275,6 +275,7 @@
       }
       .imagen{width:90%;}
       .over-text{color:white;font-size:2.7rem;font-family:'Playfair Display', serif;background: rgba(0,0,0,0.5);padding: 10px 20px;width:90%;border-radius: 8px;}
+      .over-text2{color:white;font-size:2.7rem;font-family:'Playfair Display', serif;background: rgba(0,0,0,0.5);padding: 10px 20px;width:50%;border-radius: 8px;}
       .n a {
          color: #fff;
          font-size: 1.5rem;
@@ -342,6 +343,7 @@
          .mobile-info{display: block;text-align: center;font-size: 1rem;color: #ffffff;margin-bottom: 15px;}
         
         }
+        .radio:hover{opacity:0.5;}
         @media (max-width: 480px) {
          .video-container{max-width:100%;}
         }
